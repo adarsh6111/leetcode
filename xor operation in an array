@@ -1,0 +1,16 @@
+class Solution {
+public:
+    int xorOperation(int n, int start) {
+        int nums[n];
+        int flag=0;
+        for(int j=0;j<n;j++){
+            nums[j]=start+2*j;
+
+        }
+        for(int j=0;j<n;j++){
+            flag=flag^nums[j];
+        }
+        return flag;
+
+    }
+};
